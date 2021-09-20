@@ -8,7 +8,7 @@ public class Main {
         for (int i = 0; i < prime.length; i++) {
             for (int k = 0 + i; k < prime.length; k++) { // Check each number against all the numbers in the array.
                 int divide = a[i]; // Set divider to the next number in the array 2, 3, 4 and so on
-                if (a[k] % divide == 0 && !prime[k] && a[k] != a[i]) { // Divide and set all the dividable numbers to false
+                if (a[k] % divide == 0 && !prime[k] && a[k] != a[i]) { // Divide and set all the dividable numbers to true
                     prime[k] = true;
                 }
             }
